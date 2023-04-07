@@ -1,0 +1,37 @@
+body {
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.avatar {
+    width: 150px;
+    outline: 1px solid #C89933;    
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.card {
+    line-height: 1rem;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    background: linear-gradient(160deg, #2D2A32, #2D2A32, #3C3532,  #C89933);
+    color: whitesmoke;
+    border: 2px dotted #C89933;
+}
+
+@keyframes onHover {
+    0% {outline: 0px dotted #C89933;}
+    50% {outline: 4px dotted #C89933;}
+    100% {outline: 2px dotted #C89933;}
+}
+
+.card:hover {
+    animation: onHover 400ms;
+    outline: 2px dotted #C89933;    
+}
